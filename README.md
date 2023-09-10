@@ -10,8 +10,12 @@ Deploy GrowthBook server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can open GrowthBook ADMIN UI here:
+You can open GrowthBook UI here:
 
-    URL: https://[CI_CD_DOMAIN]
+    URL: https://[CI_CD_DOMAIN]:6443
     email: [ADMIN_EMAIL]
     password: [ADMIN_PASSWORD]
+
+You can open GrowthBook API here:
+
+    URL: https://[CI_CD_DOMAIN]

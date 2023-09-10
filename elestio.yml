@@ -53,7 +53,9 @@ lifeCycleConfig:
   postRestoreCommand: "./scripts/postRestore.sh"
   postDeployCommand: "./scripts/postDeploy.sh"
 webUI:
-  - url: "https://[CI_CD_DOMAIN]"
-    label: "GrowthBook"
+  - url: "https://[CI_CD_DOMAIN]:6443"
+    label: "GrowthBook UI"
     login: "[ADMIN_EMAIL]"
     password: "[ADMIN_PASSWORD]"
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "GrowthBook API"

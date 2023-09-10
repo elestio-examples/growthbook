@@ -5,7 +5,7 @@ set -o allexport; source .env; set +o allexport;
 echo "Waiting for software to be ready ..."
 sleep 30s;
 
-curl 'https://'${DOMAIN}':6443/auth/firsttime' \
+curl 'https://'${DOMAIN}'/auth/firsttime' \
   -H 'accept: */*' \
   -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,he;q=0.6' \
   -H 'cache-control: no-cache' \
