@@ -44,7 +44,7 @@ environments:
     value: ""
   - key: "EMAIL_FROM"
     value: "[DOMAIN]@vm.elestio.app"
-  - key: "UPLOAD_METHOD "
+  - key: "UPLOAD_METHOD"
     value: "local"
 
 config:
