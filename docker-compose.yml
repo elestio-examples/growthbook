@@ -12,13 +12,13 @@ services:
     image: "growthbook/growthbook:latest"
     ports:
       - "172.17.0.1:4967:3000"
-      - "172.17.0.1:3100:3100"
+      - "172.17.0.1:5967:3100"
     depends_on:
       - mongo
     environment:
       - MONGODB_URI=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/growthbook?authSource=admin
       - PROXY_ENABLED=1
-      - API_HOST=http://growthbook:3100
+      - API_HOST=https://${DOMAIN}:6443
       - APP_ORIGIN=https://${DOMAIN}
       - NODE_ENV=${NODE_ENV}
       - JWT_SECRET=${JWT_SECRET}
