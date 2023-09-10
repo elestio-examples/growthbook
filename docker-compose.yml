@@ -18,8 +18,8 @@ services:
     environment:
       - MONGODB_URI=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/growthbook?authSource=admin
       - PROXY_ENABLED=1
-      - API_HOST=https://${DOMAIN}:6443
-      - APP_ORIGIN=https://${DOMAIN}
+      - API_HOST=https://${DOMAIN}
+      - APP_ORIGIN=https://${DOMAIN}:6443
       - NODE_ENV=${NODE_ENV}
       - JWT_SECRET=${JWT_SECRET}
       - ENCRYPTION_KEY=${ENCRYPTION_KEY}
