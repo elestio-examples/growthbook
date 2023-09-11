@@ -9,7 +9,7 @@ services:
     volumes:
       - ./storage/mongodata:/data/db
   growthbook:
-    image: "growthbook/growthbook:latest"
+    image: "growthbook/growthbook:${SOFTWARE_VERSION_TAG}"
     ports:
       - "172.17.0.1:4967:3000"
       - "172.17.0.1:5967:3100"
