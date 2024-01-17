@@ -10,6 +10,7 @@ services:
       - ./storage/mongodata:/data/db
   growthbook:
     image: "elestio/growthbook:${SOFTWARE_VERSION_TAG}"
+    restart: always
     ports:
       - "172.17.0.1:4967:3000"
       - "172.17.0.1:5967:3100"
